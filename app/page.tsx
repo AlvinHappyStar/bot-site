@@ -3,6 +3,7 @@
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 import Premium from "@/app/components/Premium";
+import Logs from "@/app/components/Logs";
 
 export default function Home() {
     return (
@@ -11,7 +12,7 @@ export default function Home() {
                 <Header />
                 <section className="divide-y-2 divide-slate-600">
                     <Premium />
-                    {/* <Team /> */}
+                    <Logs />
                 </section>
                 <Footer />
             </div>

@@ -4,7 +4,6 @@
 import React from "react";
 import Heading from "./Heading";
 import PremiumCard from "./PremiumCard";
-import PremiumPopularCard from "./PremiumPopularCard";
 
 type Props = {};
 

@@ -7,8 +7,8 @@ import { Outfit } from "next/font/google";
 const inter = Outfit({ subsets: ["latin"], weight: ["500"] });
 
 const data = {
-    title: "Discord Bot",
-    description: "A simple discord bot site",
+    title: "DEX Bot",
+    description: "A simple DEX bot site",
     image: "https://static.vecteezy.com/system/resources/previews/006/892/625/non_2x/discord-logo-icon-editorial-free-vector.jpg",
     theme: "#7dd3fc"
 };
