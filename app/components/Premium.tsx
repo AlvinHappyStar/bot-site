@@ -80,7 +80,7 @@ function MyDialog({ onClose }: DialogProps) {
                                             <span>Create</span>
                                         </Dialog.Title>
 
-                                        <CloseIcon sx={{ color: "white" }} onClick={onClose}/>
+                                        <CloseIcon sx={{ color: "white" }} onClick={onClose} />
                                     </div>
 
                                     <div className="flex flex-col mt-2 text-slate-400">
@@ -166,6 +166,21 @@ function MyDialog({ onClose }: DialogProps) {
                                             type="text"
                                             className="border bg-black text-white border-gray-800 w-full rounded-md px-3 py-1 text-white-500 my-1"
                                         />
+                                    </div>
+
+                                    <div className="flex flex-col mt-2 text-slate-400">
+                                        <span className="ml-2">Sleeping interval between txs in seconds</span>
+                                        <div className="flex justify-between">
+                                            <input
+                                                type="text"
+                                                className="border bg-black text-white border-gray-800 w-full rounded-md px-3 py-1 text-white-500 my-1"
+                                            />
+                                            <input
+                                                type="text"
+                                                className="border bg-black text-white border-gray-800 w-full rounded-md px-3 py-1 text-white-500 my-1 ml-3"
+                                            />
+                                        </div>
+
                                     </div>
 
                                     <div className="flex flex-col mt-2 text-slate-400">
