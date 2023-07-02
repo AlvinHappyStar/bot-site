@@ -52,18 +52,14 @@ function Header({}: Props) {
             <Menu as="div">
                 <div className="container mx-auto md:hidden flex flex-wrap p-3 flex-row items-center justify-between">
                     <a className="flex order-first lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center">
-                        <img
-                            src="https://static.vecteezy.com/system/resources/previews/006/892/625/non_2x/discord-logo-icon-editorial-free-vector.jpg"
-                            alt="Logo"
-                            className="w-10 h-10 rounded-full"
-                        />
+                       
                         <span className="ml-3 text-lg font-semibold tracking-wider uppercase xl:block lg:hidden">
-                            Discord Bot
+                            DEX Bot
                         </span>
                     </a>
-                    <Menu.Button className={"text-white text-xl"}>
+                    {/* <Menu.Button className={"text-white text-xl"}>
                         <FiMenu />
-                    </Menu.Button>
+                    </Menu.Button> */}
                 </div>
                 <Transition
                     as={Fragment}

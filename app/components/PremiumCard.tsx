@@ -3,7 +3,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Switch from 'react-switch';
 
 type Props = {
     name: string;
@@ -17,40 +16,11 @@ type Props = {
 function PremiumCard({ name, status, progress, chains, maxFee, random_actions }: Props) {
     const handleStart = () => {
         setStatus(!isStatus);
-        setIsEthSwitchOn(false);
-        setIsPolySwitchOn(false);
-        setIsArbSwitchOn(false);
-        setIsAvaSwitchOn(false);
-        setIsBscSwitchOn(false);
         console.log(isStatus)
     }
 
     const [isStatus, setStatus] = useState(status);
-    const [isEthSwitchOn, setIsEthSwitchOn] = useState(false);
-    const [isPolySwitchOn, setIsPolySwitchOn] = useState(false);
-    const [isAvaSwitchOn, setIsAvaSwitchOn] = useState(false);
-    const [isArbSwitchOn, setIsArbSwitchOn] = useState(false);
-    const [isBscSwitchOn, setIsBscSwitchOn] = useState(false);
-
-    const handleSwitchEthToggle = () => {
-        setIsEthSwitchOn(!isEthSwitchOn);
-    };
-
-    const handleSwitchPolyToggle = () => {
-        setIsPolySwitchOn(!isPolySwitchOn);
-    };
-
-    const handleSwitchAvaToggle = () => {
-        setIsAvaSwitchOn(!isAvaSwitchOn);
-    };
-
-    const handleSwitchArbToggle = () => {
-        setIsArbSwitchOn(!isArbSwitchOn);
-    };
-
-    const handleSwitchBscToggle = () => {
-        setIsBscSwitchOn(!isBscSwitchOn);
-    };
+    
 
     return (
         <div className="p-10 xl:w-1/3 md:w-1/2 w-full">
@@ -72,82 +42,7 @@ function PremiumCard({ name, status, progress, chains, maxFee, random_actions }:
                         {chains}
                     </div>
 
-                    <div className="border-t border-b border-slate-500">
-                        <div className="flex items-center justify-between text-slate-400 mb-2">
-                            <span>Ethereum</span>
-                            <Switch
-                                checked={isEthSwitchOn}
-                                onChange={handleSwitchEthToggle}
-                                onColor="#86d3ff"
-                                onHandleColor="#2693e6"
-                                handleDiameter={20}
-                                uncheckedIcon={false}
-                                checkedIcon={false}
-                                height={10}
-                                width={30}
-                            />
-                        </div>
-
-                        <div className="flex items-center justify-between text-slate-400 mb-2">
-                            <span>Arbitrum</span>
-                            <Switch
-                                checked={isArbSwitchOn}
-                                onChange={handleSwitchArbToggle}
-                                onColor="#86d3ff"
-                                onHandleColor="#2693e6"
-                                handleDiameter={20}
-                                uncheckedIcon={false}
-                                checkedIcon={false}
-                                height={10}
-                                width={30}
-                            />
-                        </div>
-
-                        <div className="flex items-center justify-between text-slate-400 mb-2">
-                            <span>Avax</span>
-                            <Switch
-                                checked={isAvaSwitchOn}
-                                onChange={handleSwitchAvaToggle}
-                                onColor="#86d3ff"
-                                onHandleColor="#2693e6"
-                                handleDiameter={20}
-                                uncheckedIcon={false}
-                                checkedIcon={false}
-                                height={10}
-                                width={30}
-                            />
-                        </div>
-
-                        <div className="flex items-center justify-between text-slate-400 mb-2">
-                            <span>Polygon</span>
-                            <Switch
-                                checked={isPolySwitchOn}
-                                onChange={handleSwitchPolyToggle}
-                                onColor="#86d3ff"
-                                onHandleColor="#2693e6"
-                                handleDiameter={20}
-                                uncheckedIcon={false}
-                                checkedIcon={false}
-                                height={10}
-                                width={30}
-                            />
-                        </div>
-
-                        <div className="flex items-center justify-between text-slate-400 mb-2">
-                            <span>BSC</span>
-                            <Switch
-                                checked={isBscSwitchOn}
-                                onChange={handleSwitchBscToggle}
-                                onColor="#86d3ff"
-                                onHandleColor="#2693e6"
-                                handleDiameter={20}
-                                uncheckedIcon={false}
-                                checkedIcon={false}
-                                height={10}
-                                width={30}
-                            />
-                        </div>
-                    </div>
+                    
 
 
                     <div className="flex items-center justify-between text-slate-400 mb-2">
