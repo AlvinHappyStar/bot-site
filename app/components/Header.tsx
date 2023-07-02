@@ -61,7 +61,7 @@ function Header({}: Props) {
                         <FiMenu />
                     </Menu.Button> */}
                 </div>
-                <Transition
+                {/* <Transition
                     as={Fragment}
                     enter="transition duration-100 ease-out"
                     enterFrom="transform scale-95 opacity-0"
@@ -124,7 +124,7 @@ function Header({}: Props) {
                             </Menu.Item>
                         </div>
                     </Menu.Items>
-                </Transition>
+                </Transition> */}
             </Menu>
         </header>
     );
