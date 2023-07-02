@@ -87,7 +87,7 @@ function MyDialog({ onClose }: DialogProps) {
                                         <span className="ml-2">Name</span>
                                         <input
                                             type="text"
-                                            className="border border-gray-300 outline-none w-full rounded-md px-3 py-1 text-gray-500 my-1"
+                                            className="border bg-black text-white border-gray-800 w-full rounded-md px-3 py-1 text-white-500 my-1"
                                         />
                                     </div>
 
@@ -95,7 +95,7 @@ function MyDialog({ onClose }: DialogProps) {
                                         <span className="ml-2">Txs number via bridges per wallet</span>
                                         <input
                                             type="text"
-                                            className="border border-gray-300 outline-none w-full rounded-md px-3 py-1 text-gray-500 my-1"
+                                            className="border bg-black text-white border-gray-800 w-full rounded-md px-3 py-1 text-white-500 my-1"
                                         />
                                     </div>
 
@@ -156,7 +156,7 @@ function MyDialog({ onClose }: DialogProps) {
                                         <span className="ml-2">Max gass per txs($)</span>
                                         <input
                                             type="text"
-                                            className="border border-gray-300 outline-none w-full rounded-md px-3 py-1 text-gray-500 my-1"
+                                            className="border bg-black text-white border-gray-800 w-full rounded-md px-3 py-1 text-white-500 my-1"
                                         />
                                     </div>
 
@@ -164,7 +164,7 @@ function MyDialog({ onClose }: DialogProps) {
                                         <span className="ml-2">Random actions</span>
                                         <input
                                             type="text"
-                                            className="border border-gray-300 outline-none w-full rounded-md px-3 py-1 text-gray-500 my-1"
+                                            className="border bg-black text-white border-gray-800 w-full rounded-md px-3 py-1 text-white-500 my-1"
                                         />
                                     </div>
 
@@ -172,7 +172,7 @@ function MyDialog({ onClose }: DialogProps) {
                                         <span className="ml-2">Private Key</span>
                                         <input
                                             type="text"
-                                            className="border border-gray-300 outline-none w-full rounded-md px-3 py-1 text-gray-500 my-1"
+                                            className="border bg-black text-white border-gray-800 w-full rounded-md px-3 py-1 text-white-500 my-1"
                                         />
                                     </div>
 
